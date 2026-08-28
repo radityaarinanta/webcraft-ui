@@ -22,6 +22,9 @@ function initAccordions() {
 }
 
 
+function initBadges() {}
+
+
 function initButtons() {
   document.querySelectorAll('[data-wc-button]').forEach(btn => {
     btn.addEventListener('click', function(e) {
@@ -248,6 +251,7 @@ function initToasts() {
 
 export function initWebCraft() {
   initAccordions();
+  initBadges();
   initButtons();
   initModals();
   initNavbars();
@@ -262,6 +266,7 @@ export {
   Tabs,
   Toast,
   initAccordions,
+  initBadges,
   initButtons,
   initModals,
   initNavbars,
