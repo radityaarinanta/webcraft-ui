@@ -2,13 +2,18 @@ name: Component Release Pipeline
 
 on:
   schedule:
-    - cron: '35 7,14 * * 1-5'
+    - cron: '15 7,13 * * *'
   workflow_dispatch:
     inputs:
       component_id:
         description: 'Specific Component ID to scaffold (optional)'
         required: false
         default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
 
 jobs:
   scaffold:
@@ -29,8 +34,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           GITHUB_REPO: ${{ github.repository }}
-          GIT_USER_NAME: ${{ github.actor }}
-          GIT_USER_EMAIL: ${{ github.actor }}@users.noreply.github.com
+          GIT_USER_NAME: 'radityaarinanta'
+          GIT_USER_EMAIL: 'radittantra36@gmail.com'
         run: |
           if [ -n "${{ github.event.inputs.component_id }}" ]; then
             node tools/scaffold.js --id=${{ github.event.inputs.component_id }}
