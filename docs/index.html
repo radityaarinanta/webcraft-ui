@@ -62,6 +62,10 @@
       <div>
         <div class="docs-sidebar-section-title">Components</div>
         <div class="docs-nav-list">
+          <a href="#badge" class="docs-nav-item">
+            <span>Badge</span>
+            <span class="docs-nav-count">data-display</span>
+          </a>
           <a href="#accordion" class="docs-nav-item">
             <span>Accordion</span>
             <span class="docs-nav-count">disclosure</span>
@@ -409,6 +413,51 @@ Toast.show({
   &lt;div class=&quot;wc-tab-panel is-active&quot;&gt;Manage your project overview and metrics from a unified interface.&lt;/div&gt;
   &lt;div class=&quot;wc-tab-panel&quot;&gt;Connect your repository with CI/CD and deployment hooks.&lt;/div&gt;
   &lt;div class=&quot;wc-tab-panel&quot;&gt;Configure workspace permissions and team members.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section id="badge" class="docs-component-section">
+        <div class="docs-section-header">
+          <div>
+            <h2 class="docs-section-title">Badge</h2>
+            <p class="docs-section-desc">Implement status Badges and Tags</p>
+          </div>
+        </div>
+
+        <div class="docs-preview-card">
+          <div class="docs-card-header">
+            <div class="docs-tabs">
+              <button class="docs-tab-btn is-active" data-tab="preview">Preview</button>
+              <button class="docs-tab-btn" data-tab="code">HTML / CSS</button>
+            </div>
+            <button class="docs-copy-btn" aria-label="Copy code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="docs-preview-area">
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+  <span class="wc-badge"><span class="wc-badge-dot"></span>Neutral</span>
+  <span class="wc-badge wc-badge-primary"><span class="wc-badge-dot"></span>Active</span>
+  <span class="wc-badge wc-badge-success"><span class="wc-badge-dot"></span>Deployed</span>
+  <span class="wc-badge wc-badge-warning"><span class="wc-badge-dot"></span>Pending</span>
+  <span class="wc-badge wc-badge-danger"><span class="wc-badge-dot"></span>Failed</span>
+</div>
+          </div>
+
+          <div class="docs-code-area">
+<pre><code>&lt;div style=&quot;display: flex; gap: 0.5rem; flex-wrap: wrap;&quot;&gt;
+  &lt;span class=&quot;wc-badge&quot;&gt;&lt;span class=&quot;wc-badge-dot&quot;&gt;&lt;/span&gt;Neutral&lt;/span&gt;
+  &lt;span class=&quot;wc-badge wc-badge-primary&quot;&gt;&lt;span class=&quot;wc-badge-dot&quot;&gt;&lt;/span&gt;Active&lt;/span&gt;
+  &lt;span class=&quot;wc-badge wc-badge-success&quot;&gt;&lt;span class=&quot;wc-badge-dot&quot;&gt;&lt;/span&gt;Deployed&lt;/span&gt;
+  &lt;span class=&quot;wc-badge wc-badge-warning&quot;&gt;&lt;span class=&quot;wc-badge-dot&quot;&gt;&lt;/span&gt;Pending&lt;/span&gt;
+  &lt;span class=&quot;wc-badge wc-badge-danger&quot;&gt;&lt;span class=&quot;wc-badge-dot&quot;&gt;&lt;/span&gt;Failed&lt;/span&gt;
 &lt;/div&gt;</code></pre>
           </div>
         </div>
