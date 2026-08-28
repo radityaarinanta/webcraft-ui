@@ -1,0 +1,39 @@
+name: Component Release Pipeline
+
+on:
+  schedule:
+    - cron: '35 7,14 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      component_id:
+        description: 'Specific Component ID to scaffold (optional)'
+        required: false
+        default: ''
+
+jobs:
+  scaffold:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Component Scaffolder
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          GITHUB_REPO: ${{ github.repository }}
+          GIT_USER_NAME: ${{ github.actor }}
+          GIT_USER_EMAIL: ${{ github.actor }}@users.noreply.github.com
+        run: |
+          if [ -n "${{ github.event.inputs.component_id }}" ]; then
+            node tools/scaffold.js --id=${{ github.event.inputs.component_id }}
+          else
+            node tools/scaffold.js
+          fi

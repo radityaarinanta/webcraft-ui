@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebCraft UI — Modern Vanilla Web Components</title>
+  <meta name="description" content="A modular, lightweight UI component library built with vanilla HTML5, CSS3, and JavaScript.">
+  <link rel="stylesheet" href="./docs.css">
+</head>
+<body class="docs-app">
+
+  <header class="docs-header">
+    <a href="#" class="docs-brand">
+      <div class="docs-brand-logo">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+          <polyline points="2 17 12 22 22 17"></polyline>
+          <polyline points="2 12 12 17 22 12"></polyline>
+        </svg>
+      </div>
+      <span>WebCraft UI</span>
+      <span class="docs-version-badge">v1.0.0</span>
+    </a>
+
+    <div class="docs-header-actions">
+      <button class="docs-icon-btn" id="theme-toggle" aria-label="Toggle theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2"></path>
+          <path d="M12 20v2"></path>
+          <path d="m4.93 4.93 1.41 1.41"></path>
+          <path d="m17.66 17.66 1.41 1.41"></path>
+          <path d="M2 12h2"></path>
+          <path d="M20 12h2"></path>
+          <path d="m6.34 17.66-1.41 1.41"></path>
+          <path d="m19.07 4.93-1.41 1.41"></path>
+        </svg>
+      </button>
+
+      <a href="https://github.com" target="_blank" rel="noreferrer" class="docs-icon-btn" aria-label="GitHub Repository">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <div class="docs-main-layout">
+    <aside class="docs-sidebar">
+      <div>
+        <div class="docs-sidebar-section-title">Overview</div>
+        <div class="docs-nav-list">
+          <a href="#introduction" class="docs-nav-item is-active">
+            <span>Introduction</span>
+          </a>
+          <a href="#tokens" class="docs-nav-item">
+            <span>Design Tokens</span>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="docs-sidebar-section-title">Components</div>
+        <div class="docs-nav-list">
+          <a href="#button" class="docs-nav-item">
+            <span>Button</span>
+            <span class="docs-nav-count">Core</span>
+          </a>
+          <a href="#modal" class="docs-nav-item">
+            <span>Modal</span>
+            <span class="docs-nav-count">Overlay</span>
+          </a>
+          <a href="#toast" class="docs-nav-item">
+            <span>Toast</span>
+            <span class="docs-nav-count">Feedback</span>
+          </a>
+          <a href="#navbar" class="docs-nav-item">
+            <span>Navbar</span>
+            <span class="docs-nav-count">Nav</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="docs-content">
+      <section id="introduction" class="docs-hero">
+        <div class="docs-hero-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          Vanilla Web Architecture
+        </div>
+        <h1 class="docs-hero-title">High-performance UI components with zero dependencies.</h1>
+        <p class="docs-hero-desc">
+          WebCraft UI provides accessible, modular, and lightweight interface primitives built with standard HTML5, CSS3, and JavaScript.
+        </p>
+      </section>
+
+      <div class="docs-toolbar">
+        <div class="docs-search-box">
+          <span class="docs-search-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </span>
+          <input type="search" id="docs-search" class="docs-search-input" placeholder="Search components...">
+        </div>
+      </div>
+
+      <section id="button" class="docs-component-section">
+        <div class="docs-section-header">
+          <div>
+            <h2 class="docs-section-title">Button</h2>
+            <p class="docs-section-desc">Interactive triggers with multiple visual styles, sizes, and ripple effects.</p>
+          </div>
+        </div>
+
+        <div class="docs-preview-card">
+          <div class="docs-card-header">
+            <div class="docs-tabs">
+              <button class="docs-tab-btn is-active" data-tab="preview">Preview</button>
+              <button class="docs-tab-btn" data-tab="code">HTML / CSS</button>
+            </div>
+            <button class="docs-copy-btn" aria-label="Copy code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="docs-preview-area">
+            <button class="wc-btn wc-btn-primary" data-wc-button data-wc-ripple>Primary</button>
+            <button class="wc-btn wc-btn-secondary" data-wc-button data-wc-ripple>Secondary</button>
+            <button class="wc-btn wc-btn-outline" data-wc-button data-wc-ripple>Outline</button>
+            <button class="wc-btn wc-btn-ghost" data-wc-button>Ghost</button>
+            <button class="wc-btn wc-btn-danger" data-wc-button>Danger</button>
+          </div>
+
+          <div class="docs-code-area">
+<pre><code>&lt;button class="wc-btn wc-btn-primary" data-wc-button data-wc-ripple&gt;Primary&lt;/button&gt;
+&lt;button class="wc-btn wc-btn-secondary" data-wc-button data-wc-ripple&gt;Secondary&lt;/button&gt;
+&lt;button class="wc-btn wc-btn-outline" data-wc-button data-wc-ripple&gt;Outline&lt;/button&gt;
+&lt;button class="wc-btn wc-btn-ghost" data-wc-button&gt;Ghost&lt;/button&gt;
+&lt;button class="wc-btn wc-btn-danger" data-wc-button&gt;Danger&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="modal" class="docs-component-section">
+        <div class="docs-section-header">
+          <div>
+            <h2 class="docs-section-title">Modal Dialog</h2>
+            <p class="docs-section-desc">Accessible dialog window with backdrop blur and escape key listener.</p>
+          </div>
+        </div>
+
+        <div class="docs-preview-card">
+          <div class="docs-card-header">
+            <div class="docs-tabs">
+              <button class="docs-tab-btn is-active" data-tab="preview">Preview</button>
+              <button class="docs-tab-btn" data-tab="code">HTML / JS</button>
+            </div>
+            <button class="docs-copy-btn" aria-label="Copy code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="docs-preview-area">
+            <button class="wc-btn wc-btn-primary" data-wc-modal-trigger="#demo-modal">Open Modal Dialog</button>
+          </div>
+
+          <div class="docs-code-area">
+<pre><code>&lt;button class="wc-btn wc-btn-primary" data-wc-modal-trigger="#demo-modal"&gt;Open Modal Dialog&lt;/button&gt;
+
+&lt;div class="wc-modal-backdrop" id="demo-modal"&gt;
+  &lt;div class="wc-modal"&gt;
+    &lt;div class="wc-modal-header"&gt;
+      &lt;h3 class="wc-modal-title"&gt;Confirm Action&lt;/h3&gt;
+      &lt;button class="wc-modal-close" data-wc-modal-close&gt;&times;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="wc-modal-body"&gt;
+      &lt;p&gt;Are you sure you want to proceed with this deployment task?&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="wc-modal-footer"&gt;
+      &lt;button class="wc-btn wc-btn-secondary" data-wc-modal-close&gt;Cancel&lt;/button&gt;
+      &lt;button class="wc-btn wc-btn-primary"&gt;Confirm&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="toast" class="docs-component-section">
+        <div class="docs-section-header">
+          <div>
+            <h2 class="docs-section-title">Toast Notifications</h2>
+            <p class="docs-section-desc">Floating temporary alerts with auto-dismiss and status variants.</p>
+          </div>
+        </div>
+
+        <div class="docs-preview-card">
+          <div class="docs-card-header">
+            <div class="docs-tabs">
+              <button class="docs-tab-btn is-active" data-tab="preview">Preview</button>
+              <button class="docs-tab-btn" data-tab="code">JavaScript API</button>
+            </div>
+            <button class="docs-copy-btn" aria-label="Copy code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="docs-preview-area">
+            <button class="wc-btn wc-btn-secondary" id="demo-toast-success">Trigger Success Toast</button>
+            <button class="wc-btn wc-btn-secondary" id="demo-toast-error">Trigger Error Toast</button>
+            <button class="wc-btn wc-btn-secondary" id="demo-toast-info">Trigger Info Toast</button>
+          </div>
+
+          <div class="docs-code-area">
+<pre><code>import { Toast } from './src/index.js';
+
+Toast.show({
+  type: 'success',
+  title: 'Changes Saved',
+  message: 'Your project configurations have been updated successfully.',
+  duration: 4000
+});</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="navbar" class="docs-component-section">
+        <div class="docs-section-header">
+          <div>
+            <h2 class="docs-section-title">Navbar</h2>
+            <p class="docs-section-desc">Responsive top navigation bar with blur glassmorphism and mobile drawer.</p>
+          </div>
+        </div>
+
+        <div class="docs-preview-card">
+          <div class="docs-card-header">
+            <div class="docs-tabs">
+              <button class="docs-tab-btn is-active" data-tab="preview">Preview</button>
+              <button class="docs-tab-btn" data-tab="code">HTML / CSS</button>
+            </div>
+            <button class="docs-copy-btn" aria-label="Copy code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="docs-preview-area" style="padding: 1rem; width: 100%;">
+            <div class="wc-navbar" style="position: relative; width: 100%; border-radius: var(--wc-radius-md);">
+              <div class="wc-navbar-container">
+                <div class="wc-navbar-brand">
+                  <span>AppNav</span>
+                </div>
+                <nav class="wc-navbar-nav">
+                  <a href="#" class="wc-navbar-link is-active">Home</a>
+                  <a href="#" class="wc-navbar-link">Components</a>
+                  <a href="#" class="wc-navbar-link">Guides</a>
+                </nav>
+                <div class="wc-navbar-actions">
+                  <button class="wc-btn wc-btn-primary wc-btn-sm">Get Started</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-code-area">
+<pre><code>&lt;header class="wc-navbar"&gt;
+  &lt;div class="wc-navbar-container"&gt;
+    &lt;div class="wc-navbar-brand"&gt;AppNav&lt;/div&gt;
+    &lt;nav class="wc-navbar-nav"&gt;
+      &lt;a href="#" class="wc-navbar-link is-active"&gt;Home&lt;/a&gt;
+      &lt;a href="#" class="wc-navbar-link"&gt;Components&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="wc-modal-backdrop" id="demo-modal">
+    <div class="wc-modal">
+      <div class="wc-modal-header">
+        <h3 class="wc-modal-title">Confirm Action</h3>
+        <button class="wc-modal-close" data-wc-modal-close aria-label="Close dialog">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="wc-modal-body">
+        <p>This is a demonstration of the WebCraft modal dialog component with accessible backdrop blur and key navigation.</p>
+      </div>
+      <div class="wc-modal-footer">
+        <button class="wc-btn wc-btn-secondary" data-wc-modal-close>Dismiss</button>
+        <button class="wc-btn wc-btn-primary" data-wc-modal-close>Proceed</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="docs-footer">
+    <p>WebCraft UI Component Architecture. Standard MIT License.</p>
+  </footer>
+
+  <script type="module" src="./docs.js"></script>
+</body>
+</html>

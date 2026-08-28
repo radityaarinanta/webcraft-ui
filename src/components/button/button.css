@@ -1,0 +1,127 @@
+.wc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: var(--wc-radius-md);
+  padding: 0.5rem 1rem;
+  transition: all var(--wc-transition-fast);
+  border: 1px solid transparent;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.wc-btn:focus-visible {
+  outline: 2px solid var(--wc-color-primary-500);
+  outline-offset: 2px;
+}
+
+.wc-btn:disabled,
+.wc-btn[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.wc-btn-primary {
+  background-color: var(--wc-color-primary-600);
+  color: #ffffff;
+  box-shadow: var(--wc-shadow-sm);
+}
+
+.wc-btn-primary:hover {
+  background-color: var(--wc-color-primary-500);
+  box-shadow: var(--wc-shadow-glow);
+}
+
+.wc-btn-primary:active {
+  background-color: var(--wc-color-primary-700);
+  transform: translateY(1px);
+}
+
+.wc-btn-secondary {
+  background-color: var(--wc-bg-surface-raised);
+  color: var(--wc-text-primary);
+  border-color: var(--wc-border-default);
+}
+
+.wc-btn-secondary:hover {
+  background-color: var(--wc-bg-surface-hover);
+  border-color: var(--wc-border-strong);
+}
+
+.wc-btn-outline {
+  background-color: transparent;
+  color: var(--wc-text-primary);
+  border-color: var(--wc-border-default);
+}
+
+.wc-btn-outline:hover {
+  background-color: var(--wc-bg-surface-hover);
+  border-color: var(--wc-border-strong);
+}
+
+.wc-btn-ghost {
+  background-color: transparent;
+  color: var(--wc-text-secondary);
+}
+
+.wc-btn-ghost:hover {
+  background-color: var(--wc-bg-surface-hover);
+  color: var(--wc-text-primary);
+}
+
+.wc-btn-danger {
+  background-color: var(--wc-color-danger-600);
+  color: #ffffff;
+}
+
+.wc-btn-danger:hover {
+  background-color: var(--wc-color-danger-500);
+}
+
+.wc-btn-sm {
+  font-size: 0.75rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--wc-radius-sm);
+}
+
+.wc-btn-lg {
+  font-size: 1rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: var(--wc-radius-lg);
+}
+
+.wc-btn-icon-only {
+  padding: 0.5rem;
+  border-radius: var(--wc-radius-md);
+}
+
+.wc-btn-loading .wc-btn-text {
+  visibility: hidden;
+}
+
+.wc-btn-spinner {
+  display: none;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: wc-spin 0.6s linear infinite;
+}
+
+.wc-btn-loading .wc-btn-spinner {
+  display: block;
+}
+
+@keyframes wc-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
