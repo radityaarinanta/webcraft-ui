@@ -5,6 +5,7 @@
 @import url('../src/components/modal/modal.css');
 @import url('../src/components/toast/toast.css');
 @import url('../src/components/navbar/navbar.css');
+@import url('../src/components/accordion/accordion.css');
 
 .docs-app {
   display: flex;
