@@ -234,6 +234,9 @@ async function runRemoteWorkflow(comp, token, repo) {
   execGit(`checkout ${defaultBranch}`);
   execGit(`pull origin ${defaultBranch}`);
   execGit(`branch -D ${branchName}`);
+  try {
+    execGit(`push origin --delete ${branchName}`);
+  } catch (err) {}
 
   console.log(`[Complete] Successfully published component ${comp.name} with linked Issue #${issue.number} and PR #${pr.number}.`);
 }
