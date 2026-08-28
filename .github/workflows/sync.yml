@@ -2,7 +2,7 @@ name: Component Release Pipeline
 
 on:
   schedule:
-    - cron: '15 7,13 * * *'
+    - cron: '15 2,4,7,9,12,14 * * *'
   workflow_dispatch:
     inputs:
       component_id:
