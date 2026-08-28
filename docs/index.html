@@ -62,6 +62,10 @@
       <div>
         <div class="docs-sidebar-section-title">Components</div>
         <div class="docs-nav-list">
+          <a href="#accordion" class="docs-nav-item">
+            <span>Accordion</span>
+            <span class="docs-nav-count">disclosure</span>
+          </a>
           <a href="#button" class="docs-nav-item">
             <span>Button</span>
             <span class="docs-nav-count">Core</span>
@@ -292,6 +296,69 @@ Toast.show({
     &lt;/nav&gt;
   &lt;/div&gt;
 &lt;/header&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section id="accordion" class="docs-component-section">
+        <div class="docs-section-header">
+          <div>
+            <h2 class="docs-section-title">Accordion</h2>
+            <p class="docs-section-desc">Implement accessible Accordion component</p>
+          </div>
+        </div>
+
+        <div class="docs-preview-card">
+          <div class="docs-card-header">
+            <div class="docs-tabs">
+              <button class="docs-tab-btn is-active" data-tab="preview">Preview</button>
+              <button class="docs-tab-btn" data-tab="code">HTML / CSS</button>
+            </div>
+            <button class="docs-copy-btn" aria-label="Copy code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="docs-preview-area">
+            <div class="wc-accordion" style="max-width: 480px; width: 100%;">
+  <div class="wc-accordion-item is-expanded">
+    <button class="wc-accordion-header">
+      <span>What is WebCraft UI?</span>
+      <svg class="wc-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </button>
+    <div class="wc-accordion-content">A vanilla lightweight component library engineered for clean and performant web interfaces.</div>
+  </div>
+  <div class="wc-accordion-item">
+    <button class="wc-accordion-header">
+      <span>Does it require build tools?</span>
+      <svg class="wc-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </button>
+    <div class="wc-accordion-content">No build tools are required. You can load CSS and ES modules directly into standard HTML.</div>
+  </div>
+</div>
+          </div>
+
+          <div class="docs-code-area">
+<pre><code>&lt;div class=&quot;wc-accordion&quot; style=&quot;max-width: 480px; width: 100%;&quot;&gt;
+  &lt;div class=&quot;wc-accordion-item is-expanded&quot;&gt;
+    &lt;button class=&quot;wc-accordion-header&quot;&gt;
+      &lt;span&gt;What is WebCraft UI?&lt;/span&gt;
+      &lt;svg class=&quot;wc-accordion-icon&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;&gt;&lt;polyline points=&quot;6 9 12 15 18 9&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;wc-accordion-content&quot;&gt;A vanilla lightweight component library engineered for clean and performant web interfaces.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;wc-accordion-item&quot;&gt;
+    &lt;button class=&quot;wc-accordion-header&quot;&gt;
+      &lt;span&gt;Does it require build tools?&lt;/span&gt;
+      &lt;svg class=&quot;wc-accordion-icon&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;&gt;&lt;polyline points=&quot;6 9 12 15 18 9&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;wc-accordion-content&quot;&gt;No build tools are required. You can load CSS and ES modules directly into standard HTML.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
           </div>
         </div>
       </section>
