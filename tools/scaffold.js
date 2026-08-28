@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
 import { fileURLToPath } from 'url';
+import { build } from './build.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -97,7 +98,7 @@ function applyComponentFiles(comp) {
   fs.writeFileSync(cssPath, comp.css.trim() + '\n', 'utf8');
   fs.writeFileSync(jsPath, comp.js.trim() + '\n', 'utf8');
 
-  updateDocsCss(comp.id);
+  build();
   updateDocsHtml(comp);
 }
 

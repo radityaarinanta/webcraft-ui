@@ -1,4 +1,4 @@
-import { initWebCraft, Toast, Modal } from '../src/index.js';
+import { initWebCraft, Toast, Modal } from './webcraft.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initWebCraft();

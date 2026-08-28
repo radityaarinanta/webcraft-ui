@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "node -e \"import('http').then(async h => { const fs = await import('fs'), path = await import('path'); const types = { '.html':'text/html', '.css':'text/css', '.js':'application/javascript', '.json':'application/json', '.svg':'image/svg+xml' }; h.createServer((req, res) => { let p = path.join(process.cwd(), req.url === '/' ? 'docs/index.html' : req.url); if (!fs.existsSync(p)) p = path.join(process.cwd(), 'docs', req.url); if (!fs.existsSync(p)) { res.writeHead(404); return res.end('Not Found'); } const ext = path.extname(p); res.writeHead(200, { 'Content-Type': types[ext] || 'text/plain' }); fs.createReadStream(p).pipe(res); }).listen(3000, () => console.log('Development server running at http://localhost:3000')); })\"",
+    "build": "node tools/build.js",
     "scaffold": "node tools/scaffold.js",
     "scaffold:list": "node tools/scaffold.js --list",
     "scaffold:dry": "node tools/scaffold.js --dry-run",
