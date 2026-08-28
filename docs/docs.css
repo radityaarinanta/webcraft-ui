@@ -6,6 +6,7 @@
 @import url('../src/components/toast/toast.css');
 @import url('../src/components/navbar/navbar.css');
 @import url('../src/components/accordion/accordion.css');
+@import url('../src/components/tabs/tabs.css');
 
 .docs-app {
   display: flex;
