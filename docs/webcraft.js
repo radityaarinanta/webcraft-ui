@@ -158,6 +158,27 @@ function initNavbars() {
 }
 
 
+class SegmentedControl {
+  constructor(element) {
+    this.element = typeof element === 'string' ? document.querySelector(element) : element;
+    if (!this.element) return;
+    this.buttons = this.element.querySelectorAll('.wc-segment-btn');
+    this.init();
+  }
+  init() {
+    this.buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        this.buttons.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+      });
+    });
+  }
+}
+function initSegmentedControls() {
+  document.querySelectorAll('.wc-segmented').forEach(el => new SegmentedControl(el));
+}
+
+
 class Tabs {
   constructor(element) {
     this.element = typeof element === 'string' ? document.querySelector(element) : element;
@@ -258,6 +279,7 @@ export function initWebCraft() {
   initButtons();
   initModals();
   initNavbars();
+  initSegmentedControls();
   initTabsComponent();
   initToasts();
   initToggleSwitches();
@@ -267,6 +289,7 @@ export {
   Accordion,
   Modal,
   Navbar,
+  SegmentedControl,
   Tabs,
   Toast,
   initAccordions,
@@ -274,6 +297,7 @@ export {
   initButtons,
   initModals,
   initNavbars,
+  initSegmentedControls,
   initTabsComponent,
   initToasts,
   initToggleSwitches
@@ -285,6 +309,7 @@ if (typeof window !== 'undefined') {
     Accordion,
     Modal,
     Navbar,
+    SegmentedControl,
     Tabs,
     Toast
   };

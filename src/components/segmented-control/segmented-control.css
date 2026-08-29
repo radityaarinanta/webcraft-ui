@@ -1,0 +1,4 @@
+.wc-segmented { display: inline-flex; background-color: var(--wc-bg-surface-raised); border: 1px solid var(--wc-border-default); border-radius: var(--wc-radius-md); padding: 3px; gap: 2px; }
+.wc-segment-btn { padding: 0.375rem 0.875rem; font-size: 0.8125rem; font-weight: 500; color: var(--wc-text-secondary); border-radius: var(--wc-radius-sm); transition: all var(--wc-transition-fast); }
+.wc-segment-btn:hover { color: var(--wc-text-primary); }
+.wc-segment-btn.is-active { background-color: var(--wc-bg-surface); color: var(--wc-text-primary); box-shadow: var(--wc-shadow-sm); font-weight: 600; }
