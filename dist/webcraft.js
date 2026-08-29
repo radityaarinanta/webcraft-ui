@@ -249,6 +249,9 @@ function initToasts() {
 }
 
 
+function initToggleSwitches() {}
+
+
 export function initWebCraft() {
   initAccordions();
   initBadges();
@@ -257,6 +260,7 @@ export function initWebCraft() {
   initNavbars();
   initTabsComponent();
   initToasts();
+  initToggleSwitches();
 }
 
 export {
@@ -271,7 +275,8 @@ export {
   initModals,
   initNavbars,
   initTabsComponent,
-  initToasts
+  initToasts,
+  initToggleSwitches
 };
 
 if (typeof window !== 'undefined') {

@@ -62,6 +62,10 @@
       <div>
         <div class="docs-sidebar-section-title">Components</div>
         <div class="docs-nav-list">
+          <a href="#toggle-switch" class="docs-nav-item">
+            <span>Toggle Switch</span>
+            <span class="docs-nav-count">inputs</span>
+          </a>
           <a href="#badge" class="docs-nav-item">
             <span>Badge</span>
             <span class="docs-nav-count">data-display</span>
@@ -459,6 +463,47 @@ Toast.show({
   &lt;span class=&quot;wc-badge wc-badge-warning&quot;&gt;&lt;span class=&quot;wc-badge-dot&quot;&gt;&lt;/span&gt;Pending&lt;/span&gt;
   &lt;span class=&quot;wc-badge wc-badge-danger&quot;&gt;&lt;span class=&quot;wc-badge-dot&quot;&gt;&lt;/span&gt;Failed&lt;/span&gt;
 &lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section id="toggle-switch" class="docs-component-section">
+        <div class="docs-section-header">
+          <div>
+            <h2 class="docs-section-title">Toggle Switch</h2>
+            <p class="docs-section-desc">Implement accessible Toggle Switch input</p>
+          </div>
+        </div>
+
+        <div class="docs-preview-card">
+          <div class="docs-card-header">
+            <div class="docs-tabs">
+              <button class="docs-tab-btn is-active" data-tab="preview">Preview</button>
+              <button class="docs-tab-btn" data-tab="code">HTML / CSS</button>
+            </div>
+            <button class="docs-copy-btn" aria-label="Copy code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="docs-preview-area">
+            <label class="wc-switch">
+  <input type="checkbox" checked>
+  <span class="wc-switch-track"><span class="wc-switch-thumb"></span></span>
+  <span>Enable Auto Deployments</span>
+</label>
+          </div>
+
+          <div class="docs-code-area">
+<pre><code>&lt;label class=&quot;wc-switch&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; checked&gt;
+  &lt;span class=&quot;wc-switch-track&quot;&gt;&lt;span class=&quot;wc-switch-thumb&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span&gt;Enable Auto Deployments&lt;/span&gt;
+&lt;/label&gt;</code></pre>
           </div>
         </div>
       </section>
