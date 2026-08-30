@@ -62,6 +62,10 @@
       <div>
         <div class="docs-sidebar-section-title">Components</div>
         <div class="docs-nav-list">
+          <a href="#progress-bar" class="docs-nav-item">
+            <span>Progress Bar</span>
+            <span class="docs-nav-count">feedback</span>
+          </a>
           <a href="#segmented-control" class="docs-nav-item">
             <span>Segmented Control</span>
             <span class="docs-nav-count">inputs</span>
@@ -548,6 +552,45 @@ Toast.show({
   &lt;button class=&quot;wc-segment-btn is-active&quot;&gt;Daily&lt;/button&gt;
   &lt;button class=&quot;wc-segment-btn&quot;&gt;Weekly&lt;/button&gt;
   &lt;button class=&quot;wc-segment-btn&quot;&gt;Monthly&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section id="progress-bar" class="docs-component-section">
+        <div class="docs-section-header">
+          <div>
+            <h2 class="docs-section-title">Progress Bar</h2>
+            <p class="docs-section-desc">Implement linear Progress Bar component</p>
+          </div>
+        </div>
+
+        <div class="docs-preview-card">
+          <div class="docs-card-header">
+            <div class="docs-tabs">
+              <button class="docs-tab-btn is-active" data-tab="preview">Preview</button>
+              <button class="docs-tab-btn" data-tab="code">HTML / CSS</button>
+            </div>
+            <button class="docs-copy-btn" aria-label="Copy code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="docs-preview-area">
+            <div style="display: flex; flex-direction: column; gap: 1rem; width: 100%; max-width: 400px;">
+  <div class="wc-progress"><div class="wc-progress-bar" style="width: 68%;"></div></div>
+  <div class="wc-progress wc-progress-indeterminate"><div class="wc-progress-bar"></div></div>
+</div>
+          </div>
+
+          <div class="docs-code-area">
+<pre><code>&lt;div style=&quot;display: flex; flex-direction: column; gap: 1rem; width: 100%; max-width: 400px;&quot;&gt;
+  &lt;div class=&quot;wc-progress&quot;&gt;&lt;div class=&quot;wc-progress-bar&quot; style=&quot;width: 68%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;wc-progress wc-progress-indeterminate&quot;&gt;&lt;div class=&quot;wc-progress-bar&quot;&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
           </div>
         </div>

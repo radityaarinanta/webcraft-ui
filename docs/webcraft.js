@@ -158,6 +158,9 @@ function initNavbars() {
 }
 
 
+function initProgressBars() {}
+
+
 class SegmentedControl {
   constructor(element) {
     this.element = typeof element === 'string' ? document.querySelector(element) : element;
@@ -279,6 +282,7 @@ export function initWebCraft() {
   initButtons();
   initModals();
   initNavbars();
+  initProgressBars();
   initSegmentedControls();
   initTabsComponent();
   initToasts();
@@ -297,6 +301,7 @@ export {
   initButtons,
   initModals,
   initNavbars,
+  initProgressBars,
   initSegmentedControls,
   initTabsComponent,
   initToasts,
