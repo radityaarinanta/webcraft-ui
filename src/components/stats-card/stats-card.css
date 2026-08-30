@@ -1,0 +1,5 @@
+.wc-stat-card { background-color: var(--wc-bg-surface); border: 1px solid var(--wc-border-default); border-radius: var(--wc-radius-lg); padding: 1.5rem; width: 100%; max-width: 300px; box-shadow: var(--wc-shadow-md); display: flex; flex-direction: column; gap: 0.75rem; }
+.wc-stat-header { display: flex; align-items: center; justify-content: space-between; font-size: 0.8125rem; color: var(--wc-text-muted); font-weight: 500; }
+.wc-stat-value { font-size: 1.875rem; font-weight: 700; color: var(--wc-text-primary); letter-spacing: -0.03em; }
+.wc-stat-footer { display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; color: var(--wc-text-secondary); }
+.wc-trend-up { color: var(--wc-color-success-500); font-weight: 600; display: inline-flex; align-items: center; gap: 2px; }

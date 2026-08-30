@@ -62,6 +62,10 @@
       <div>
         <div class="docs-sidebar-section-title">Components</div>
         <div class="docs-nav-list">
+          <a href="#stats-card" class="docs-nav-item">
+            <span>Stats Card</span>
+            <span class="docs-nav-count">cards</span>
+          </a>
           <a href="#progress-bar" class="docs-nav-item">
             <span>Progress Bar</span>
             <span class="docs-nav-count">feedback</span>
@@ -591,6 +595,59 @@ Toast.show({
 <pre><code>&lt;div style=&quot;display: flex; flex-direction: column; gap: 1rem; width: 100%; max-width: 400px;&quot;&gt;
   &lt;div class=&quot;wc-progress&quot;&gt;&lt;div class=&quot;wc-progress-bar&quot; style=&quot;width: 68%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;wc-progress wc-progress-indeterminate&quot;&gt;&lt;div class=&quot;wc-progress-bar&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section id="stats-card" class="docs-component-section">
+        <div class="docs-section-header">
+          <div>
+            <h2 class="docs-section-title">Stats Card</h2>
+            <p class="docs-section-desc">Implement Dashboard Stats Metric Card</p>
+          </div>
+        </div>
+
+        <div class="docs-preview-card">
+          <div class="docs-card-header">
+            <div class="docs-tabs">
+              <button class="docs-tab-btn is-active" data-tab="preview">Preview</button>
+              <button class="docs-tab-btn" data-tab="code">HTML / CSS</button>
+            </div>
+            <button class="docs-copy-btn" aria-label="Copy code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="docs-preview-area">
+            <div class="wc-stat-card">
+  <div class="wc-stat-header">
+    <span>Total Contributions</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+  </div>
+  <div class="wc-stat-value">1,429</div>
+  <div class="wc-stat-footer">
+    <span class="wc-trend-up">+18.4%</span>
+    <span>from last cycle</span>
+  </div>
+</div>
+          </div>
+
+          <div class="docs-code-area">
+<pre><code>&lt;div class=&quot;wc-stat-card&quot;&gt;
+  &lt;div class=&quot;wc-stat-header&quot;&gt;
+    &lt;span&gt;Total Contributions&lt;/span&gt;
+    &lt;svg width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;&gt;&lt;polyline points=&quot;23 6 13.5 15.5 8.5 10.5 1 18&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;wc-stat-value&quot;&gt;1,429&lt;/div&gt;
+  &lt;div class=&quot;wc-stat-footer&quot;&gt;
+    &lt;span class=&quot;wc-trend-up&quot;&gt;+18.4%&lt;/span&gt;
+    &lt;span&gt;from last cycle&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
           </div>
         </div>
