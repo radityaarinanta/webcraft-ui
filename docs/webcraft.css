@@ -494,6 +494,11 @@ ul, ol {
   }
 }
 
+.wc-progress { width: 100%; max-width: 400px; height: 8px; background-color: var(--wc-bg-surface-raised); border-radius: var(--wc-radius-full); overflow: hidden; border: 1px solid var(--wc-border-subtle); position: relative; }
+.wc-progress-bar { height: 100%; background: linear-gradient(90deg, var(--wc-color-primary-600), var(--wc-color-primary-400)); border-radius: var(--wc-radius-full); transition: width var(--wc-transition-base); }
+.wc-progress-indeterminate .wc-progress-bar { width: 40%; position: absolute; animation: wc-progress-slide 1.5s infinite ease-in-out; }
+@keyframes wc-progress-slide { 0% { left: -40%; } 100% { left: 100%; } }
+
 .wc-segmented { display: inline-flex; background-color: var(--wc-bg-surface-raised); border: 1px solid var(--wc-border-default); border-radius: var(--wc-radius-md); padding: 3px; gap: 2px; }
 .wc-segment-btn { padding: 0.375rem 0.875rem; font-size: 0.8125rem; font-weight: 500; color: var(--wc-text-secondary); border-radius: var(--wc-radius-sm); transition: all var(--wc-transition-fast); }
 .wc-segment-btn:hover { color: var(--wc-text-primary); }
