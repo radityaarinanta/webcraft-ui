@@ -182,6 +182,9 @@ function initSegmentedControls() {
 }
 
 
+function initStatsCards() {}
+
+
 class Tabs {
   constructor(element) {
     this.element = typeof element === 'string' ? document.querySelector(element) : element;
@@ -284,6 +287,7 @@ export function initWebCraft() {
   initNavbars();
   initProgressBars();
   initSegmentedControls();
+  initStatsCards();
   initTabsComponent();
   initToasts();
   initToggleSwitches();
@@ -303,6 +307,7 @@ export {
   initNavbars,
   initProgressBars,
   initSegmentedControls,
+  initStatsCards,
   initTabsComponent,
   initToasts,
   initToggleSwitches
