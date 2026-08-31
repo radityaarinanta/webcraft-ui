@@ -62,6 +62,10 @@
       <div>
         <div class="docs-sidebar-section-title">Components</div>
         <div class="docs-nav-list">
+          <a href="#skeleton" class="docs-nav-item">
+            <span>Skeleton Loader</span>
+            <span class="docs-nav-count">feedback</span>
+          </a>
           <a href="#stats-card" class="docs-nav-item">
             <span>Stats Card</span>
             <span class="docs-nav-count">cards</span>
@@ -647,6 +651,53 @@ Toast.show({
   &lt;div class=&quot;wc-stat-footer&quot;&gt;
     &lt;span class=&quot;wc-trend-up&quot;&gt;+18.4%&lt;/span&gt;
     &lt;span&gt;from last cycle&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section id="skeleton" class="docs-component-section">
+        <div class="docs-section-header">
+          <div>
+            <h2 class="docs-section-title">Skeleton Loader</h2>
+            <p class="docs-section-desc">Implement Skeleton Placeholder Loader</p>
+          </div>
+        </div>
+
+        <div class="docs-preview-card">
+          <div class="docs-card-header">
+            <div class="docs-tabs">
+              <button class="docs-tab-btn is-active" data-tab="preview">Preview</button>
+              <button class="docs-tab-btn" data-tab="code">HTML / CSS</button>
+            </div>
+            <button class="docs-copy-btn" aria-label="Copy code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="docs-preview-area">
+            <div style="display: flex; gap: 1rem; width: 100%; max-width: 320px; align-items: flex-start;">
+  <div class="wc-skeleton wc-skeleton-avatar"></div>
+  <div style="flex: 1;">
+    <div class="wc-skeleton wc-skeleton-title"></div>
+    <div class="wc-skeleton wc-skeleton-text"></div>
+    <div class="wc-skeleton wc-skeleton-text" style="width: 80%;"></div>
+  </div>
+</div>
+          </div>
+
+          <div class="docs-code-area">
+<pre><code>&lt;div style=&quot;display: flex; gap: 1rem; width: 100%; max-width: 320px; align-items: flex-start;&quot;&gt;
+  &lt;div class=&quot;wc-skeleton wc-skeleton-avatar&quot;&gt;&lt;/div&gt;
+  &lt;div style=&quot;flex: 1;&quot;&gt;
+    &lt;div class=&quot;wc-skeleton wc-skeleton-title&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;wc-skeleton wc-skeleton-text&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;wc-skeleton wc-skeleton-text&quot; style=&quot;width: 80%;&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
           </div>

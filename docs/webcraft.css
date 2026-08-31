@@ -504,6 +504,12 @@ ul, ol {
 .wc-segment-btn:hover { color: var(--wc-text-primary); }
 .wc-segment-btn.is-active { background-color: var(--wc-bg-surface); color: var(--wc-text-primary); box-shadow: var(--wc-shadow-sm); font-weight: 600; }
 
+.wc-skeleton { background: linear-gradient(90deg, var(--wc-bg-surface-raised) 25%, var(--wc-bg-surface-hover) 50%, var(--wc-bg-surface-raised) 75%); background-size: 200% 100%; animation: wc-shimmer 1.5s infinite; border-radius: var(--wc-radius-sm); }
+.wc-skeleton-avatar { width: 44px; height: 44px; border-radius: 50%; }
+.wc-skeleton-text { height: 12px; width: 100%; margin-bottom: 8px; }
+.wc-skeleton-title { height: 18px; width: 60%; margin-bottom: 12px; }
+@keyframes wc-shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
 .wc-stat-card { background-color: var(--wc-bg-surface); border: 1px solid var(--wc-border-default); border-radius: var(--wc-radius-lg); padding: 1.5rem; width: 100%; max-width: 300px; box-shadow: var(--wc-shadow-md); display: flex; flex-direction: column; gap: 0.75rem; }
 .wc-stat-header { display: flex; align-items: center; justify-content: space-between; font-size: 0.8125rem; color: var(--wc-text-muted); font-weight: 500; }
 .wc-stat-value { font-size: 1.875rem; font-weight: 700; color: var(--wc-text-primary); letter-spacing: -0.03em; }

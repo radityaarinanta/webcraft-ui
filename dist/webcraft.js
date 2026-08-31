@@ -182,6 +182,9 @@ function initSegmentedControls() {
 }
 
 
+function initSkeletons() {}
+
+
 function initStatsCards() {}
 
 
@@ -287,6 +290,7 @@ export function initWebCraft() {
   initNavbars();
   initProgressBars();
   initSegmentedControls();
+  initSkeletons();
   initStatsCards();
   initTabsComponent();
   initToasts();
@@ -307,6 +311,7 @@ export {
   initNavbars,
   initProgressBars,
   initSegmentedControls,
+  initSkeletons,
   initStatsCards,
   initTabsComponent,
   initToasts,
