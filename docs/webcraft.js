@@ -164,6 +164,9 @@ function initNavbars() {
 }
 
 
+function initPagination() {}
+
+
 function initProgressBars() {}
 
 
@@ -299,6 +302,7 @@ export function initWebCraft() {
   initButtons();
   initModals();
   initNavbars();
+  initPagination();
   initProgressBars();
   initSegmentedControls();
   initSkeletons();
@@ -323,6 +327,7 @@ export {
   initButtons,
   initModals,
   initNavbars,
+  initPagination,
   initProgressBars,
   initSegmentedControls,
   initSkeletons,
