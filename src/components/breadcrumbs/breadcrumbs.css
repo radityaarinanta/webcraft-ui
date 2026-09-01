@@ -1,0 +1,6 @@
+.wc-breadcrumb { display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: var(--wc-text-secondary); }
+.wc-breadcrumb-item { display: inline-flex; align-items: center; gap: 0.5rem; }
+.wc-breadcrumb-link { transition: color var(--wc-transition-fast); }
+.wc-breadcrumb-link:hover { color: var(--wc-text-primary); }
+.wc-breadcrumb-separator { color: var(--wc-text-muted); width: 14px; height: 14px; }
+.wc-breadcrumb-current { color: var(--wc-text-primary); font-weight: 600; }
