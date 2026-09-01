@@ -1,0 +1,4 @@
+.wc-avatar-group { display: flex; align-items: center; }
+.wc-avatar { width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--wc-bg-surface); background-color: var(--wc-color-primary-700); color: #ffffff; display: inline-flex; align-items: center; justify-content: center; font-size: 0.8125rem; font-weight: 600; margin-left: -8px; }
+.wc-avatar:first-child { margin-left: 0; }
+.wc-avatar-more { background-color: var(--wc-bg-surface-raised); color: var(--wc-text-secondary); border-color: var(--wc-border-default); }

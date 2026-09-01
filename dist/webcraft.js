@@ -22,6 +22,9 @@ function initAccordions() {
 }
 
 
+function initAvatars() {}
+
+
 function initBadges() {}
 
 
@@ -287,6 +290,7 @@ function initTooltips() {}
 
 export function initWebCraft() {
   initAccordions();
+  initAvatars();
   initBadges();
   initButtons();
   initModals();
@@ -309,6 +313,7 @@ export {
   Tabs,
   Toast,
   initAccordions,
+  initAvatars,
   initBadges,
   initButtons,
   initModals,
