@@ -28,6 +28,9 @@ function initAvatars() {}
 function initBadges() {}
 
 
+function initBreadcrumbs() {}
+
+
 function initButtons() {
   document.querySelectorAll('[data-wc-button]').forEach(btn => {
     btn.addEventListener('click', function(e) {
@@ -292,6 +295,7 @@ export function initWebCraft() {
   initAccordions();
   initAvatars();
   initBadges();
+  initBreadcrumbs();
   initButtons();
   initModals();
   initNavbars();
@@ -315,6 +319,7 @@ export {
   initAccordions,
   initAvatars,
   initBadges,
+  initBreadcrumbs,
   initButtons,
   initModals,
   initNavbars,

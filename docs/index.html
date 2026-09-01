@@ -62,6 +62,10 @@
       <div>
         <div class="docs-sidebar-section-title">Components</div>
         <div class="docs-nav-list">
+          <a href="#breadcrumbs" class="docs-nav-item">
+            <span>Breadcrumbs</span>
+            <span class="docs-nav-count">navigation</span>
+          </a>
           <a href="#avatar-group" class="docs-nav-item">
             <span>Avatar Group</span>
             <span class="docs-nav-count">data-display</span>
@@ -790,6 +794,51 @@ Toast.show({
   &lt;div class=&quot;wc-avatar&quot; style=&quot;background-color: var(--wc-color-primary-500);&quot;&gt;SK&lt;/div&gt;
   &lt;div class=&quot;wc-avatar wc-avatar-more&quot;&gt;+4&lt;/div&gt;
 &lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section id="breadcrumbs" class="docs-component-section">
+        <div class="docs-section-header">
+          <div>
+            <h2 class="docs-section-title">Breadcrumbs</h2>
+            <p class="docs-section-desc">Implement accessible Breadcrumb navigation</p>
+          </div>
+        </div>
+
+        <div class="docs-preview-card">
+          <div class="docs-card-header">
+            <div class="docs-tabs">
+              <button class="docs-tab-btn is-active" data-tab="preview">Preview</button>
+              <button class="docs-tab-btn" data-tab="code">HTML / CSS</button>
+            </div>
+            <button class="docs-copy-btn" aria-label="Copy code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="docs-preview-area">
+            <nav class="wc-breadcrumb" aria-label="Breadcrumb">
+  <div class="wc-breadcrumb-item"><a href="#" class="wc-breadcrumb-link">Projects</a></div>
+  <svg class="wc-breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  <div class="wc-breadcrumb-item"><a href="#" class="wc-breadcrumb-link">WebCraft UI</a></div>
+  <svg class="wc-breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  <div class="wc-breadcrumb-item wc-breadcrumb-current">Components</div>
+</nav>
+          </div>
+
+          <div class="docs-code-area">
+<pre><code>&lt;nav class=&quot;wc-breadcrumb&quot; aria-label=&quot;Breadcrumb&quot;&gt;
+  &lt;div class=&quot;wc-breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;wc-breadcrumb-link&quot;&gt;Projects&lt;/a&gt;&lt;/div&gt;
+  &lt;svg class=&quot;wc-breadcrumb-separator&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;&gt;&lt;polyline points=&quot;9 18 15 12 9 6&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;
+  &lt;div class=&quot;wc-breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;wc-breadcrumb-link&quot;&gt;WebCraft UI&lt;/a&gt;&lt;/div&gt;
+  &lt;svg class=&quot;wc-breadcrumb-separator&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;&gt;&lt;polyline points=&quot;9 18 15 12 9 6&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;
+  &lt;div class=&quot;wc-breadcrumb-item wc-breadcrumb-current&quot;&gt;Components&lt;/div&gt;
+&lt;/nav&gt;</code></pre>
           </div>
         </div>
       </section>
