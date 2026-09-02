@@ -65,6 +65,28 @@ function initButtons() {
 }
 
 
+class Dropdown {
+  constructor(element) {
+    this.element = typeof element === 'string' ? document.querySelector(element) : element;
+    if (!this.element) return;
+    this.trigger = this.element.querySelector('[data-wc-dropdown-trigger]');
+    this.init();
+  }
+  init() {
+    this.trigger?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.element.classList.toggle('is-open');
+    });
+    document.addEventListener('click', (e) => {
+      if (!this.element.contains(e.target)) this.element.classList.remove('is-open');
+    });
+  }
+}
+function initDropdowns() {
+  document.querySelectorAll('.wc-dropdown').forEach(el => new Dropdown(el));
+}
+
+
 class Modal {
   constructor(element) {
     this.element = typeof element === 'string' ? document.querySelector(element) : element;
@@ -300,6 +322,7 @@ export function initWebCraft() {
   initBadges();
   initBreadcrumbs();
   initButtons();
+  initDropdowns();
   initModals();
   initNavbars();
   initPagination();
@@ -315,6 +338,7 @@ export function initWebCraft() {
 
 export {
   Accordion,
+  Dropdown,
   Modal,
   Navbar,
   SegmentedControl,
@@ -325,6 +349,7 @@ export {
   initBadges,
   initBreadcrumbs,
   initButtons,
+  initDropdowns,
   initModals,
   initNavbars,
   initPagination,
@@ -342,6 +367,7 @@ if (typeof window !== 'undefined') {
   window.WebCraft = {
     init: initWebCraft,
     Accordion,
+    Dropdown,
     Modal,
     Navbar,
     SegmentedControl,
