@@ -304,6 +304,13 @@ ul, ol {
   }
 }
 
+.wc-dropdown { position: relative; display: inline-block; }
+.wc-dropdown-menu { position: absolute; top: calc(100% + 6px); left: 0; min-width: 180px; background-color: var(--wc-bg-surface); border: 1px solid var(--wc-border-default); border-radius: var(--wc-radius-md); box-shadow: var(--wc-shadow-lg); padding: 0.375rem; z-index: 200; display: none; flex-direction: column; gap: 2px; }
+.wc-dropdown.is-open .wc-dropdown-menu { display: flex; }
+.wc-dropdown-item { display: flex; align-items: center; gap: 0.625rem; padding: 0.5rem 0.75rem; font-size: 0.8125rem; color: var(--wc-text-secondary); border-radius: var(--wc-radius-sm); text-align: left; width: 100%; transition: all var(--wc-transition-fast); }
+.wc-dropdown-item:hover { color: var(--wc-text-primary); background-color: var(--wc-bg-surface-hover); }
+.wc-dropdown-divider { height: 1px; background-color: var(--wc-border-subtle); margin: 0.25rem 0; }
+
 .wc-modal-backdrop {
   position: fixed;
   inset: 0;
