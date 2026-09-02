@@ -519,6 +519,12 @@ ul, ol {
 .wc-page-btn.is-active { color: #ffffff; background-color: var(--wc-color-primary-600); border-color: var(--wc-color-primary-500); font-weight: 600; }
 .wc-page-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
+.wc-pricing-card { background-color: var(--wc-bg-surface); border: 1px solid var(--wc-border-default); border-radius: var(--wc-radius-xl); padding: 2rem; width: 100%; max-width: 320px; box-shadow: var(--wc-shadow-md); display: flex; flex-direction: column; gap: 1.25rem; position: relative; }
+.wc-pricing-popular { border-color: var(--wc-color-primary-500); box-shadow: var(--wc-shadow-glow); }
+.wc-pricing-badge { position: absolute; top: -12px; right: 1.5rem; font-size: 0.6875rem; font-weight: 700; background-color: var(--wc-color-primary-600); color: #ffffff; padding: 0.25rem 0.625rem; border-radius: var(--wc-radius-full); text-transform: uppercase; }
+.wc-pricing-price { font-size: 2.25rem; font-weight: 800; color: var(--wc-text-primary); letter-spacing: -0.03em; }
+.wc-pricing-features { display: flex; flex-direction: column; gap: 0.625rem; font-size: 0.875rem; color: var(--wc-text-secondary); }
+
 .wc-progress { width: 100%; max-width: 400px; height: 8px; background-color: var(--wc-bg-surface-raised); border-radius: var(--wc-radius-full); overflow: hidden; border: 1px solid var(--wc-border-subtle); position: relative; }
 .wc-progress-bar { height: 100%; background: linear-gradient(90deg, var(--wc-color-primary-600), var(--wc-color-primary-400)); border-radius: var(--wc-radius-full); transition: width var(--wc-transition-base); }
 .wc-progress-indeterminate .wc-progress-bar { width: 40%; position: absolute; animation: wc-progress-slide 1.5s infinite ease-in-out; }

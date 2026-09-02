@@ -189,6 +189,9 @@ function initNavbars() {
 function initPagination() {}
 
 
+function initPricingCards() {}
+
+
 function initProgressBars() {}
 
 
@@ -326,6 +329,7 @@ export function initWebCraft() {
   initModals();
   initNavbars();
   initPagination();
+  initPricingCards();
   initProgressBars();
   initSegmentedControls();
   initSkeletons();
@@ -353,6 +357,7 @@ export {
   initModals,
   initNavbars,
   initPagination,
+  initPricingCards,
   initProgressBars,
   initSegmentedControls,
   initSkeletons,
