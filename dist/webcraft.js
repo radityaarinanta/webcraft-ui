@@ -195,6 +195,9 @@ function initPricingCards() {}
 function initProgressBars() {}
 
 
+function initSearchBars() {}
+
+
 class SegmentedControl {
   constructor(element) {
     this.element = typeof element === 'string' ? document.querySelector(element) : element;
@@ -331,6 +334,7 @@ export function initWebCraft() {
   initPagination();
   initPricingCards();
   initProgressBars();
+  initSearchBars();
   initSegmentedControls();
   initSkeletons();
   initStatsCards();
@@ -359,6 +363,7 @@ export {
   initPagination,
   initPricingCards,
   initProgressBars,
+  initSearchBars,
   initSegmentedControls,
   initSkeletons,
   initStatsCards,

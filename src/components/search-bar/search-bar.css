@@ -1,0 +1,5 @@
+.wc-search { position: relative; width: 100%; max-width: 360px; display: flex; align-items: center; }
+.wc-search-input { width: 100%; background-color: var(--wc-bg-surface); border: 1px solid var(--wc-border-default); border-radius: var(--wc-radius-md); padding: 0.5rem 3rem 0.5rem 2.25rem; font-size: 0.875rem; color: var(--wc-text-primary); transition: all var(--wc-transition-fast); }
+.wc-search-input:focus { outline: none; border-color: var(--wc-color-primary-500); box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15); }
+.wc-search-prefix { position: absolute; left: 0.75rem; color: var(--wc-text-muted); width: 16px; height: 16px; pointer-events: none; }
+.wc-search-shortcut { position: absolute; right: 0.625rem; font-size: 0.6875rem; font-family: var(--wc-font-mono); background-color: var(--wc-bg-surface-raised); border: 1px solid var(--wc-border-default); border-radius: 4px; padding: 2px 5px; color: var(--wc-text-muted); }
