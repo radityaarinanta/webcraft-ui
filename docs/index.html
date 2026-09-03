@@ -62,6 +62,10 @@
       <div>
         <div class="docs-sidebar-section-title">Components</div>
         <div class="docs-nav-list">
+          <a href="#drawer" class="docs-nav-item">
+            <span>Drawer Panel</span>
+            <span class="docs-nav-count">overlay</span>
+          </a>
           <a href="#alert" class="docs-nav-item">
             <span>Alert Banner</span>
             <span class="docs-nav-count">feedback</span>
@@ -1090,6 +1094,55 @@ Toast.show({
   &lt;div&gt;
     &lt;div class=&quot;wc-alert-title&quot;&gt;New Version Available&lt;/div&gt;
     &lt;div class=&quot;wc-alert-desc&quot;&gt;A major update with 10+ new components is ready for installation.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section id="drawer" class="docs-component-section">
+        <div class="docs-section-header">
+          <div>
+            <h2 class="docs-section-title">Drawer Panel</h2>
+            <p class="docs-section-desc">Implement slide-out Drawer offcanvas panel</p>
+          </div>
+        </div>
+
+        <div class="docs-preview-card">
+          <div class="docs-card-header">
+            <div class="docs-tabs">
+              <button class="docs-tab-btn is-active" data-tab="preview">Preview</button>
+              <button class="docs-tab-btn" data-tab="code">HTML / CSS</button>
+            </div>
+            <button class="docs-copy-btn" aria-label="Copy code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="docs-preview-area">
+            <div style="display: inline-block;">
+  <button class="wc-btn wc-btn-secondary" onclick="document.getElementById('demo-drawer').classList.add('is-open')">Open Right Drawer</button>
+  <div class="wc-drawer-backdrop" id="demo-drawer" onclick="if(event.target === this) this.classList.remove('is-open')">
+    <div class="wc-drawer">
+      <div style="padding: 1.25rem; border-bottom: 1px solid var(--wc-border-subtle); display: flex; justify-content: space-between;"><span style="font-weight: 600;">Navigation Panel</span><button onclick="document.getElementById('demo-drawer').classList.remove('is-open')">&times;</button></div>
+      <div style="padding: 1.5rem; flex: 1; color: var(--wc-text-secondary); font-size: 0.875rem;">Drawer panel content demonstration with backdrop click to close.</div>
+    </div>
+  </div>
+</div>
+          </div>
+
+          <div class="docs-code-area">
+<pre><code>&lt;div style=&quot;display: inline-block;&quot;&gt;
+  &lt;button class=&quot;wc-btn wc-btn-secondary&quot; onclick=&quot;document.getElementById(&#039;demo-drawer&#039;).classList.add(&#039;is-open&#039;)&quot;&gt;Open Right Drawer&lt;/button&gt;
+  &lt;div class=&quot;wc-drawer-backdrop&quot; id=&quot;demo-drawer&quot; onclick=&quot;if(event.target === this) this.classList.remove(&#039;is-open&#039;)&quot;&gt;
+    &lt;div class=&quot;wc-drawer&quot;&gt;
+      &lt;div style=&quot;padding: 1.25rem; border-bottom: 1px solid var(--wc-border-subtle); display: flex; justify-content: space-between;&quot;&gt;&lt;span style=&quot;font-weight: 600;&quot;&gt;Navigation Panel&lt;/span&gt;&lt;button onclick=&quot;document.getElementById(&#039;demo-drawer&#039;).classList.remove(&#039;is-open&#039;)&quot;&gt;&amp;times;&lt;/button&gt;&lt;/div&gt;
+      &lt;div style=&quot;padding: 1.5rem; flex: 1; color: var(--wc-text-secondary); font-size: 0.875rem;&quot;&gt;Drawer panel content demonstration with backdrop click to close.&lt;/div&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
           </div>
