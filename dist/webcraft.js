@@ -22,6 +22,9 @@ function initAccordions() {
 }
 
 
+function initAlerts() {}
+
+
 function initAvatars() {}
 
 
@@ -324,6 +327,7 @@ function initTooltips() {}
 
 export function initWebCraft() {
   initAccordions();
+  initAlerts();
   initAvatars();
   initBadges();
   initBreadcrumbs();
@@ -353,6 +357,7 @@ export {
   Tabs,
   Toast,
   initAccordions,
+  initAlerts,
   initAvatars,
   initBadges,
   initBreadcrumbs,
