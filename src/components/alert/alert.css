@@ -1,0 +1,4 @@
+.wc-alert { display: flex; align-items: flex-start; gap: 0.875rem; padding: 1rem 1.25rem; border-radius: var(--wc-radius-md); border: 1px solid var(--wc-border-default); background-color: var(--wc-bg-surface); width: 100%; max-width: 480px; font-size: 0.875rem; }
+.wc-alert-info { border-color: rgba(99, 102, 241, 0.3); background-color: rgba(99, 102, 241, 0.08); color: var(--wc-text-primary); }
+.wc-alert-title { font-weight: 600; margin-bottom: 0.25rem; }
+.wc-alert-desc { color: var(--wc-text-secondary); font-size: 0.8125rem; line-height: 1.5; }
