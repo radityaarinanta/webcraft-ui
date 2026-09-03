@@ -68,6 +68,16 @@ function initButtons() {
 }
 
 
+class Drawer {
+  constructor(element) {
+    this.element = typeof element === 'string' ? document.querySelector(element) : element;
+  }
+  open() { this.element?.classList.add('is-open'); }
+  close() { this.element?.classList.remove('is-open'); }
+}
+function initDrawers() {}
+
+
 class Dropdown {
   constructor(element) {
     this.element = typeof element === 'string' ? document.querySelector(element) : element;
@@ -332,6 +342,7 @@ export function initWebCraft() {
   initBadges();
   initBreadcrumbs();
   initButtons();
+  initDrawers();
   initDropdowns();
   initModals();
   initNavbars();
@@ -350,6 +361,7 @@ export function initWebCraft() {
 
 export {
   Accordion,
+  Drawer,
   Dropdown,
   Modal,
   Navbar,
@@ -362,6 +374,7 @@ export {
   initBadges,
   initBreadcrumbs,
   initButtons,
+  initDrawers,
   initDropdowns,
   initModals,
   initNavbars,
@@ -382,6 +395,7 @@ if (typeof window !== 'undefined') {
   window.WebCraft = {
     init: initWebCraft,
     Accordion,
+    Drawer,
     Dropdown,
     Modal,
     Navbar,
