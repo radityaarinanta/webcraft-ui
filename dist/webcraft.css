@@ -571,6 +571,14 @@ ul, ol {
 .wc-tab-panel { padding: 1.25rem 0; display: none; font-size: 0.875rem; color: var(--wc-text-secondary); line-height: 1.6; }
 .wc-tab-panel.is-active { display: block; }
 
+.wc-timeline { display: flex; flex-direction: column; position: relative; padding-left: 1.5rem; }
+.wc-timeline::before { content: ''; position: absolute; left: 6px; top: 8px; bottom: 8px; width: 2px; background-color: var(--wc-border-default); }
+.wc-timeline-item { position: relative; padding-bottom: 1.5rem; }
+.wc-timeline-item:last-child { padding-bottom: 0; }
+.wc-timeline-dot { position: absolute; left: -1.5rem; top: 4px; width: 14px; height: 14px; border-radius: 50%; background-color: var(--wc-color-primary-600); border: 2px solid var(--wc-bg-canvas); }
+.wc-timeline-title { font-size: 0.875rem; font-weight: 600; color: var(--wc-text-primary); margin-bottom: 0.25rem; }
+.wc-timeline-date { font-size: 0.75rem; color: var(--wc-text-muted); }
+
 .wc-toast-container {
   position: fixed;
   bottom: 1.5rem;
