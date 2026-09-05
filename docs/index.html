@@ -62,6 +62,10 @@
       <div>
         <div class="docs-sidebar-section-title">Components</div>
         <div class="docs-nav-list">
+          <a href="#slider" class="docs-nav-item">
+            <span>Range Slider</span>
+            <span class="docs-nav-count">inputs</span>
+          </a>
           <a href="#timeline" class="docs-nav-item">
             <span>Timeline</span>
             <span class="docs-nav-count">data-display</span>
@@ -1203,6 +1207,45 @@ Toast.show({
     &lt;div class=&quot;wc-timeline-title&quot;&gt;Component Registry Expansion&lt;/div&gt;
     &lt;div class=&quot;wc-timeline-date&quot;&gt;Scaffolding pipeline active&lt;/div&gt;
   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section id="slider" class="docs-component-section">
+        <div class="docs-section-header">
+          <div>
+            <h2 class="docs-section-title">Range Slider</h2>
+            <p class="docs-section-desc">Implement custom Range Slider component</p>
+          </div>
+        </div>
+
+        <div class="docs-preview-card">
+          <div class="docs-card-header">
+            <div class="docs-tabs">
+              <button class="docs-tab-btn is-active" data-tab="preview">Preview</button>
+              <button class="docs-tab-btn" data-tab="code">HTML / CSS</button>
+            </div>
+            <button class="docs-copy-btn" aria-label="Copy code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="docs-preview-area">
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%; max-width: 320px;">
+  <div style="display: flex; justify-content: space-between; font-size: 0.8125rem;"><span>Threshold</span><span>75%</span></div>
+  <input type="range" class="wc-slider" min="0" max="100" value="75">
+</div>
+          </div>
+
+          <div class="docs-code-area">
+<pre><code>&lt;div style=&quot;display: flex; flex-direction: column; gap: 0.5rem; width: 100%; max-width: 320px;&quot;&gt;
+  &lt;div style=&quot;display: flex; justify-content: space-between; font-size: 0.8125rem;&quot;&gt;&lt;span&gt;Threshold&lt;/span&gt;&lt;span&gt;75%&lt;/span&gt;&lt;/div&gt;
+  &lt;input type=&quot;range&quot; class=&quot;wc-slider&quot; min=&quot;0&quot; max=&quot;100&quot; value=&quot;75&quot;&gt;
 &lt;/div&gt;</code></pre>
           </div>
         </div>
