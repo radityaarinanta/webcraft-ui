@@ -235,6 +235,9 @@ function initSegmentedControls() {
 function initSkeletons() {}
 
 
+function initSliders() {}
+
+
 function initStatsCards() {}
 
 
@@ -355,6 +358,7 @@ export function initWebCraft() {
   initSearchBars();
   initSegmentedControls();
   initSkeletons();
+  initSliders();
   initStatsCards();
   initTabsComponent();
   initTimelines();
@@ -388,6 +392,7 @@ export {
   initSearchBars,
   initSegmentedControls,
   initSkeletons,
+  initSliders,
   initStatsCards,
   initTabsComponent,
   initTimelines,

@@ -1,0 +1,3 @@
+.wc-slider { width: 100%; max-width: 320px; -webkit-appearance: none; height: 6px; border-radius: var(--wc-radius-full); background: var(--wc-bg-surface-raised); border: 1px solid var(--wc-border-default); outline: none; }
+.wc-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: var(--wc-color-primary-500); cursor: pointer; border: 2px solid #ffffff; box-shadow: var(--wc-shadow-sm); transition: transform var(--wc-transition-fast); }
+.wc-slider::-webkit-slider-thumb:hover { transform: scale(1.15); }
